@@ -38,6 +38,10 @@ tr {
 	text-align: center;
 }
 
+#graphExperience {
+	height: 900px;
+	width: 1900px;
+}
 #home {
 	text-align: center;
 	width: 1890px;
@@ -55,6 +59,10 @@ tr {
 	margin: 100px auto auto auto;
 }
 
+#softDevelopment {
+	height: 900px;
+	width: 1900px;
+}
 #section3 {
 	height: 900px;
 	width: 1900px;
