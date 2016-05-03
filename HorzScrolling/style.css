@@ -11,6 +11,7 @@
 * {
 	margin: 0;
 	padding: 0;
+
 }
 
 body { 
@@ -28,7 +29,27 @@ tr {
 /*
 	STRUCTURE
 */
+@keyframes flash {
+	0% {opacity: 1.0;}
+	10% {opacity: 0;}
+	20% {opacity: 1.0;}
+	30% {opacity: 0;}
+	40% {opacity: 1.0;}
+	50% {opacity: 0;}
+	60% {opacity: 1.0;}
+	70% {opacity: 0;}
+	80% {opacity: 1.0;}
+	90% {opacity: 0;}
+	100% {opacity: 1.0;}
+}
 
+.boring {
+	text-decoration: none;
+}
+
+.boring:hover {
+	text-decoration: none;
+}
 #cube {
 	height: 900px;
 	width: 1900px;
@@ -38,6 +59,18 @@ tr {
 	text-align: center;
 }
 
+#dbcard {
+	height: 900px;
+	width: 1900px;
+	margin-top: 15%;
+	transition: 2s;
+	webkit-transition: 2s;
+}
+
+.flash {
+	animation-name: flash;
+	animation-duration: 10s;
+}
 #graphExperience {
 	height: 900px;
 	width: 1900px;
@@ -57,6 +90,11 @@ tr {
 	width: 700px;
 	height: 900px;
 	margin: 100px auto auto auto;
+	position: relative;
+}
+
+#scrollAdvise {
+	margin-top: 2%;
 }
 
 #softDevelopment {
@@ -73,6 +111,25 @@ tr {
 	width: 1900px;
 }
 
+#work {
+	height: 900px;
+	width: 1900px;
+	text-align: center;
+	position: relative;
+}
+#workButton {
+	z-index: 200;
+	margin: 300px 0 0 200px;
+	width: 300px;
+	transition: 1s;
+	webkit-transition: 1s;
+
+}
+#workArea img {
+	max-height: 100px;
+	max-width: 100px;
+
+}
 
 
 /*
@@ -205,4 +262,84 @@ p { font-size: 3em; margin: 0 0 15px 0; }
 
 #radio-back:checked ~ .space3d ._3dbox {
 	transform: rotateY(180deg);
+}
+
+/* Timeline */
+
+/* Digital Business Card */
+
+
+#bcard {
+	height: 200px;
+	width: 400px;
+	position: relative;
+	box-shadow: 0 0 10px #888888;
+	overflow: hidden;
+	background-color: #ffffff;
+	margin:  5% 0 0 0;
+}
+
+#email {
+	float: left;
+	font-size: 12px;
+}
+
+#firstName {
+	float: left;
+	margin: 5px 2px 5px 0;
+	font-size: 18px;
+
+}
+
+#lastName {
+	float: left;
+	margin: 5px 5px 5px 1px;
+	font-size: 18px;
+}
+
+#leftSide {
+	float: left;
+	height: 80%;
+	width: 50%;
+	margin-left: 2%;
+}
+
+#leftBottom {
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	height: 50px;
+	width: 50%;
+
+}
+
+#occupation {
+	float: left;
+}
+
+#phone {
+	float: left;
+	font-size: 12px;
+}
+
+#pic img {
+	float: right;
+	height: 180px;
+	width: 180px;
+	margin: 10px 10px 0 0;
+
+}
+
+#rightSide {
+	float: right;
+	height: 80%;
+	width: 48%;
+
+}
+.row {
+	display: block;
+	clear: both;
+	margin-top: 5px;
+	margin-left: 5px;
+
 }
