@@ -34,13 +34,12 @@
     <div id="home" class="post container">
         <h1>Welcome to the Future</h1>
         <p>By Logan Hendricks</p>
-      <div id="scrollAdvise">
-        <p class= "flash">Scroll to learn more</p>
-          </div>
+        <div id="scrollAdvise">
+            <p class="flash">Scroll to learn more</p>
+        </div>
     </div>
     <div id="work" class="post container">
-
-        <div id="workArea">
+        <div class="transition" id="workArea">
             <img src="../images/work%20photo/securitas-logo.jpg"/>
             <img src="../images/work%20photo/dbb1f0_b574434855d446269e22c039c2729da0.png"/>
             <img src="../images/work%20photo/download.jpeg"/>
@@ -51,56 +50,63 @@
             <img src="../images/work%20photo/ZionsBank-logo_wTag-stack.png"/>
         </div>
         <div class="textBox">
-            <div id="workButton" onclick= "workDisplay()">
-                <a href = #workArea"> <h1>My Previous Work</h1></a>
+            <div id="workButton" class="transition title link" onclick="textFade('workButton', 'workArea')">
+                <a class="boring" href="#workArea"><h2>My Previous Work</h2></a>
             </div>
         </div>
+
+
     </div>
-    <div id="cube" class="post container">
-        <!-- CONTROLS -->
-        <div class="cubeSpace">
-            <input type="radio" checked id="radio-front" name="select-face"/>
-            <input type="radio" id="radio-left" name="select-face"/>
-            <input type="radio" id="radio-right" name="select-face"/>
-            <input type="radio" id="radio-top" name="select-face"/>
-            <input type="radio" id="radio-bottom" name="select-face"/>
-            <input type="radio" id="radio-back" name="select-face"/>
-            <div class="separator"></div>
-            <div class="space3d">
-                <div class="_3dbox">
-                    <div class="_3dface _3dface--front">
-                        <!-- Button trigger modal -->
-                        <a data-toggle="modal" href="#loganModal">
+    <div id="portfolio" class="post container">
+        <div class="textBox">
+            <div id="portfolioLink" class="transition title link" onclick="textFade('portfolioLink', 'cube')">
+                <a class="boring" href="#"><h2>My Portfolio</h2></a>
+            </div>
+            <div id="paddingCube1"></div>
+
+            <div id="cube" class=" transition">
+                <h2>Cube of Content</h2>
+                <div id="paddingCube2"></div>
+                <!-- CONTROLS -->
+                <input type="radio" checked id="radio-front" name="select-face"/>
+                <input type="radio" id="radio-left" name="select-face"/>
+                <input type="radio" id="radio-right" name="select-face"/>
+                <input type="radio" id="radio-top" name="select-face"/>
+                <input type="radio" id="radio-bottom" name="select-face"/>
+                <input type="radio" id="radio-back" name="select-face"/>
+                <div id="paddingCube3"></div>
+                <div class="space3d">
+                    <div class="_3dbox">
+                        <div class="_3dface _3dface--front">
                             <img class="boxImage"
                                  src="../images/Screen%20Shot%202016-05-02%20at%208.14.19%20AM%20(2).png"/>
-                        </a>
 
-                    </div>
-                    <div class="_3dface _3dface--top">
-                        <img class="boxImage" src="../images/avila web design.png"/>
-                    </div>
-                    <div class="_3dface _3dface--bottom">
-                        <img class="boxImage" src="../images/Avila 2.png"/>
-                    </div>
-                    <div class="_3dface _3dface--left">
-                        <img class="boxImage"
-                             src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
-                    </div>
-                    <div class="_3dface _3dface--right">
-                        <img class="boxImage"
-                             src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
-                    </div>
-                    <div class="_3dface _3dface--back">
-                        <img class="boxImage"
-                             src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
+                        </div>
+                        <div class="_3dface _3dface--top">
+                            <img class="boxImage" src="../images/avila web design.png"/>
+                        </div>
+                        <div class="_3dface _3dface--bottom">
+                            <img class="boxImage" src="../images/Avila 2.png"/>
+                        </div>
+                        <div class="_3dface _3dface--left">
+                            <img class="boxImage"
+                                 src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
+                        </div>
+                        <div class="_3dface _3dface--right">
+                            <img class="boxImage"
+                                 src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
+                        </div>
+                        <div class="_3dface _3dface--back">
+                            <img class="boxImage"
+                                 src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <div id="section3" class="post container">
+  <!--  <div id="section3" class="post container">
         <div class="textBox">
             <h2>Post Title Example Three</h2>
             <p>By <a href="http://css-tricks.com"><strong>CSS</strong>-Tricks</a></p>
@@ -131,14 +137,16 @@
                 malesuada. Donec commodo purus sed quam posuere eleifend. Nam accumsan.</p>
         </div>
 
-    </div>
+    </div> -->
 
     <div id="webDev" class="post container">
         <div class="textBox">
-            <h2>Web Development Experience</h2>
-            <a href="#theTest" class="btn btn-info" data-toggle="collapse"> Collapsible</a>
-
-            <div id="theTest" class="collapse">
+            <div id="webDevLink" class="transition title link" onclick="textFade('webDevLink', 'theTest')">
+                <a href="#theTest" class="boring"><h2>Web Development Experience</h2></a>
+            </div>
+            <div id="webPadding">
+            </div>
+            <div id="theTest" class="transition">
                 <h2>HTML</h2>
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
@@ -193,10 +201,12 @@
 
     <div id="softDevelopment" class="post container">
         <div class="textBox">
-            <h2>Software Development Experience</h2>
-            <a href="#theTest2" class="btn btn-info" data-toggle="collapse"> Collapsible</a>
-
-            <div id="theTest2" class="collapse">
+            <div id="SoftDevLink" class="transition title link" onclick="textFade('SoftDevLink', 'theTest2')">
+                <a href="#theTest2" class="boring"><h2>Software Development Experience</h2></a>
+            </div>
+            <div id="softPadding">
+            </div>
+            <div id="theTest2" class="transition">
                 <h2>Git</h2>
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
@@ -227,10 +237,12 @@
 
     <div id="graphExperience" class="post container">
         <div class="textBox">
-            <h2>Graphic Experience</h2>
-            <a href="#theTest3" class="btn btn-info" data-toggle="collapse"> Collapsible</a>
-
-            <div id="theTest3" class="collapse">
+            <div id="graphExLink" class="transition title link" onclick="textFade('graphExLink', 'theTest3')">
+                <a href="#theTest3" class="boring"><h2>Graphic Experience</h2></a>
+            </div>
+            <div id="graphPadding">
+            </div>
+            <div id="theTest3" class="transition">
                 <h2>GIMP</h2>
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
@@ -259,10 +271,13 @@
         </div>
     </div>
 
-    <div id="dbcard" onclick="moveCard()" class ="post container">
+    <div id="dbcard" class="post container">
         <div class="textBox">
-           <a id = "cardClicker" class="boring" href ="#bcard" data-toggle="collapse"><h1> My Digital Business Card</h1> </a>
-            <div id="bcard" class="collapse">
+            <div id="cardBox" onclick="textFade('cardBox', 'bcard')" class="title transition link">
+                <a id="cardClicker" class="boring" href="#bcard"><h2> My Digital Business Card</h2>
+                </a>
+            </div>
+            <div id="bcard" class="transition">
                 <div id="leftSide">
                     <div class="row">
                         <div id="firstName"></div>

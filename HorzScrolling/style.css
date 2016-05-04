@@ -14,6 +14,7 @@
 
 }
 
+
 body { 
 	font-size: 62.5%; 
 	font-family: 'Lucida Grande', Helvetica, sans-serif;
@@ -43,6 +44,13 @@ tr {
 	100% {opacity: 1.0;}
 }
 
+#bcard {
+	opacity: 0;
+	transition-delay: 2s;
+	position: relative;
+	top: 300px;
+	left: 150px;
+}
 .boring {
 	text-decoration: none;
 }
@@ -50,21 +58,22 @@ tr {
 .boring:hover {
 	text-decoration: none;
 }
+
+.collapse {
+	transition: 10s;
+}
+
 #cube {
-	height: 900px;
-	width: 1900px;
+	opacity: 0;
+	transition-delay: 2s;
 }
 .cubeSpace {
-	margin-top: 50px;
 	text-align: center;
 }
 
 #dbcard {
 	height: 900px;
 	width: 1900px;
-	margin-top: 15%;
-	transition: 2s;
-	webkit-transition: 2s;
 }
 
 .flash {
@@ -75,6 +84,11 @@ tr {
 	height: 900px;
 	width: 1900px;
 }
+
+#graphPadding {
+	width: 700px;
+	height: 265px;
+}
 #home {
 	text-align: center;
 	width: 1890px;
@@ -83,46 +97,99 @@ tr {
 #home h1 {
 	margin-top: 400px;
 }
+.link {
+	z-index: 100;
+}
 
 .post {
-}
-.textBox {
-	width: 700px;
-	height: 900px;
-	margin: 100px auto auto auto;
 	position: relative;
+}
+#portfolio {
+	height: 900px;
+	width: 1900px;
 }
 
 #scrollAdvise {
 	margin-top: 2%;
 }
 
-#softDevelopment {
-	height: 900px;
-	width: 1900px;
-}
 #section3 {
 	height: 900px;
 	width: 1900px;
 }
 
-#webDev {
+#softDevelopment {
 	height: 900px;
 	width: 1900px;
 }
+#softPadding {
+	width: 700px;
+	height: 265px;
+}
 
+
+.textBox {
+	width: 700px;
+	height: 900px;
+	margin: 0 auto 0 auto;
+	position: relative;
+	text-align: center;
+}
+.title {
+	position: absolute;
+	top: 40%;
+	text-align: center;
+	width: 700px;
+}
+
+.transition {
+	transition: 2s;
+	-webkit-transition: 2s;
+
+}
+
+#theTest {
+	opacity: 0;
+	transition-delay: 2s;
+}
+
+#theTest2 {
+	opacity: 0;
+	transition-delay: 2s;
+}
+#theTest3 {
+	opacity: 0;
+	transition-delay: 2s;
+}
+
+#webDev {
+	height: 900px;
+	width: 1900px;
+	text-align: center;
+	position: relative;
+}
+#webDevLink {
+	z-index: 100;
+}
+#webPadding {
+	width: 700px;
+	height: 150px;
+}
 #work {
 	height: 900px;
 	width: 1900px;
 	text-align: center;
 	position: relative;
 }
-#workButton {
-	z-index: 200;
-	margin: 300px 0 0 200px;
-	width: 300px;
-	transition: 1s;
-	webkit-transition: 1s;
+
+#workArea {
+	position: absolute;
+	background-color: red;
+	top: 40%;
+	left: 25%;
+	opacity: 0;
+	transition-delay: 2s;
+
 
 }
 #workArea img {
@@ -154,23 +221,20 @@ p { font-size: 3em; margin: 0 0 15px 0; }
 */
 
 
-.separator {
-	margin-top: 125px;
-	margin-bottom: 40px;
+#paddingCube1 {
+	width: 700px;
+	height: 25px;
 }
 
-.twitter {
-	color: #FFF;
-	text-decoration: none;
-	border-radius: 4px;
-	background: #00ACED;
-	display: inline-block;
-	padding: 10px 8px;
-	margin-bottom: 15px;
-	font-weight: bold;
+#paddingCube2 {
+	width: 700px;
+	height: 25px;
+}
+#paddingCube3 {
+	width: 700px;
+	height: 125px;
 }
 
-/* 3D Cube */
 .boxImage {
 	max-height: 500px;
 	max-width: 500px;
@@ -191,7 +255,7 @@ p { font-size: 3em; margin: 0 0 15px 0; }
 	width: 100%;
 	height: 100%;
 	transform-style: preserve-3d;
-	transform: rotateX(-15deg) rotateY(15deg);
+	transform: rotateX(0deg) rotateY(0deg);
 }
 
 ._3dface {
@@ -276,7 +340,6 @@ p { font-size: 3em; margin: 0 0 15px 0; }
 	box-shadow: 0 0 10px #888888;
 	overflow: hidden;
 	background-color: #ffffff;
-	margin:  5% 0 0 0;
 }
 
 #email {

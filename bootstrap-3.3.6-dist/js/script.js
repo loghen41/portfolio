@@ -20,6 +20,8 @@ function moveCard () {
     document.getElementById("dbcard").style.marginTop = "5%";
 }
 
-function workDisplay () {
-    document.getElementById("workButton").style.opacity = "0";
+
+function textFade (idin, idout) {
+    document.getElementById(idin).style.opacity = "0";
+    document.getElementById(idout).style.opacity = "1.0";
 }
