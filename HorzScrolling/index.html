@@ -28,6 +28,15 @@
 
 <body>
 
+<div class="btn-group-vertical" role="group" aria-label="...">
+    <button href="#home" type = "button" class="btn btn-default">Home</button>
+    <button href="#work" type = "button" class="btn btn-default">Work Experience</button>
+    <button data-target="#portfolio" type = "button" class="btn btn-default">Portfolio</button>
+    <button data-target="#webDev" type = "button" class="btn btn-default">Web Development</button>
+    <button data-target="#softDevelopment" type = "button" class="btn btn-default">Software Development</button>
+    <button data-target="#graphExperience" type = "button" class="btn btn-default">Graphic Experience</button>
+    <button data-target="#dbcard" type = "button" class="btn btn-default">Contact information</button>
+</div>
 
 <div id="page-wrap">
 
@@ -39,20 +48,75 @@
         </div>
     </div>
     <div id="work" class="post container">
-        <div class="transition" id="workArea">
-            <img src="../images/work%20photo/securitas-logo.jpg"/>
-            <img src="../images/work%20photo/dbb1f0_b574434855d446269e22c039c2729da0.png"/>
-            <img src="../images/work%20photo/download.jpeg"/>
-
-            <img src="../images/work%20photo/Associated-Food-Stores.png"/>
-            <img src="../images/work%20photo/BYUI1.png"/>
-            <img src="../images/work%20photo/blackback.jpg"/>
-            <img src="../images/work%20photo/ZionsBank-logo_wTag-stack.png"/>
-        </div>
-        <div class="textBox">
             <div id="workButton" class="transition title link" onclick="textFade('workButton', 'workArea')">
-                <a class="boring" href="#workArea"><h2>My Previous Work</h2></a>
+                <a class="boring" href="#workArea"><h2>My Previous Work Experience</h2></a>
             </div>
+
+        <div id="workArea" class="transition">
+            <h2> My Previous Work Experience</h2>
+            <div class="paddingCube3"></div>
+            <table id="workTable">
+                <thead>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td><img id="zrii" onmouseover="imgtextAppear('zriiText')" onmouseout="imgtextFade('zriiText')"
+                             src="../images/work%20photo/dbb1f0_b574434855d446269e22c039c2729da0.png"/></td>
+                    <td id="zriiText" class="tableText transitionFast">
+                       <p>Zrii LLC</p>
+                            <p>Executive Support Representative</p>
+                            <p>Jun 2010 - Nov 2010</p>
+                    </td>
+                    <td><img id="afs" onmouseover="imgtextAppear('afsText')" onmouseout="imgtextFade('afsText')"
+                             src="../images/work%20photo/Associated-Food-Stores.png"/></td>
+                    <td id="afsText" class="tableText transitionFast">
+                        <p>Associated Food Stores</p>
+                        <p>Cashier</p>
+                        <p>Jul 2011 - Dec 2012</p>
+                    </td>
+                    <td><img id="holdman" onmouseover="imgtextAppear('holdmanText')"
+                             onmouseout="imgtextFade('holdmanText')" src="../images/work%20photo/blackback.jpg"/></td>
+                    <td id="holdmanText" class="tableText transitionFast">
+                        <p>Holdman Studios</p>
+                            <p>Gallery Director</p>
+                            <p>Apr 2013 - May 2015</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img id="securitas" onmouseover="imgtextAppear('securitasText')"
+                             onmouseout="imgtextFade('securitasText')" src="../images/work%20photo/securitas-logo.jpg"/>
+                    </td>
+                    <td id="securitasText" class="tableText transitionFast">
+                        <p>Securitas</p>
+                            <p>Security Guard</p>
+                            <p>Dec 2006 - Aug 2007</p>
+                    </td>
+                    <td><img id="woodbury" onmouseover="imgtextAppear('woodburyText')"
+                             onmouseout="imgtextFade('woodburyText')" src="../images/work%20photo/download.jpeg"/></td>
+                    <td id="woodburyText" class="tableText transitionFast">
+                        <p>Woodbury Art Museum</p>
+                            <p>Museum Docent</p>
+                            <p>Jul 2011 - Dec 2011</p>
+                    </td>
+                    <td><img id="byui" onmouseover="imgtextAppear('byuiText')" onmouseout="imgtextFade('byuiText')"
+                             src="../images/work%20photo/BYUI1.png"/></td>
+                    <td id="byuiText" class="tableText transitionFast">
+                        <p>BYU - Idaho</p>
+                        <p>Student Secretary</p>
+                        <p>Jan 2012 - Jul 2012</p>
+                    </td>
+                    <td><img id="zions" onmouseover="imgtextAppear('zionsText')" onmouseout="imgtextFade('zionsText')"
+                             src="../images/work%20photo/zbank.jpg"/></td>
+                    <td id="zionsText" class="tableText transitionFast">
+                        <p>Zion's Bank</p>
+                        <p>Teller III</p>
+                        <p>Sep 2015 - Current</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
 
 
@@ -62,11 +126,11 @@
             <div id="portfolioLink" class="transition title link" onclick="textFade('portfolioLink', 'cube')">
                 <a class="boring" href="#"><h2>My Portfolio</h2></a>
             </div>
-            <div id="paddingCube1"></div>
+            <div class="paddingCube1"></div>
 
             <div id="cube" class=" transition">
-                <h2>Cube of Content</h2>
-                <div id="paddingCube2"></div>
+                <h2>My Portfolio</h2>
+                <div class="paddingCube1"></div>
                 <!-- CONTROLS -->
                 <input type="radio" checked id="radio-front" name="select-face"/>
                 <input type="radio" id="radio-left" name="select-face"/>
@@ -74,31 +138,50 @@
                 <input type="radio" id="radio-top" name="select-face"/>
                 <input type="radio" id="radio-bottom" name="select-face"/>
                 <input type="radio" id="radio-back" name="select-face"/>
-                <div id="paddingCube3"></div>
+                <div class="paddingCube3"></div>
                 <div class="space3d">
                     <div class="_3dbox">
-                        <div class="_3dface _3dface--front">
-                            <img class="boxImage"
-                                 src="../images/Screen%20Shot%202016-05-02%20at%208.14.19%20AM%20(2).png"/>
-
+                        <div onmouseover="imgtextAppear('frontDiv')" onmouseout="imgtextFade('frontDiv')"
+                             class="_3dface _3dface--front">
+                            <div class="boxOpacity transitionVeryFast" id="frontDiv">
+                                <a class="biggerText" href="https://github.com/loghen41/resume-MATC"> Logan Hendricks -
+                                    Final Design </a>
+                            </div>
                         </div>
-                        <div class="_3dface _3dface--top">
-                            <img class="boxImage" src="../images/avila web design.png"/>
+                        <div onmouseover="imgtextAppear('topDiv')" onmouseout="imgtextFade('topDiv')"
+                             class="_3dface _3dface--top">
+                            <div class="boxOpacity transitionVeryFast" id="topDiv">
+                                <a class="biggerText " href="https://github.com/loghen41/Avila-1">
+                                    Avila 3d Design - Initial Design </a>
+                            </div>
                         </div>
-                        <div class="_3dface _3dface--bottom">
-                            <img class="boxImage" src="../images/Avila 2.png"/>
+                        <div onmouseover="imgtextAppear('bottomDiv')" onmouseout="imgtextFade('bottomDiv')"
+                             class="_3dface _3dface--bottom">
+                            <div class="boxOpacity transitionVeryFast" id="bottomDiv">
+                                <a class="biggerText" href="https://github.com/loghen41/Avila-2"> Avila 3d Design -
+                                    Final Design </a>
+                            </div>
                         </div>
-                        <div class="_3dface _3dface--left">
-                            <img class="boxImage"
-                                 src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
+                        <div onmouseover="imgtextAppear('leftDiv')" onmouseout="imgtextFade('leftDiv')"
+                             class="_3dface _3dface--left">
+                            <div class="boxOpacity transitionVeryFast" id="leftDiv">
+                                <a class="biggerText" href="https://github.com/loghen41?tab=repositories">Future
+                                    Projects to be posted at my Github Repository </a>
+                            </div>
                         </div>
-                        <div class="_3dface _3dface--right">
-                            <img class="boxImage"
-                                 src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
+                        <div onmouseover="imgtextAppear('rightDiv')" onmouseout="imgtextFade('rightDiv')"
+                             class="_3dface _3dface--right">
+                            <div class="boxOpacity transitionVeryFast" id="rightDiv">
+                                <a class="biggerText" href="https://github.com/loghen41?tab=repositories">Future
+                                    Projects to be posted at my Github Repository </a>
+                            </div>
                         </div>
-                        <div class="_3dface _3dface--back">
-                            <img class="boxImage"
-                                 src="http://sacobserver.com/wp-content/uploads/2012/08/coming-soon.jpg"/>
+                        <div onmouseover="imgtextAppear('backDiv')" onmouseout="imgtextFade('backDiv')"
+                             class="_3dface _3dface--back">
+                            <div class="boxOpacity transitionVeryFast" id="backDiv">
+                                <a class="biggerText" href="https://github.com/loghen41?tab=repositories">Future
+                                    Projects to be posted at my Github Repository </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -106,38 +189,6 @@
         </div>
     </div>
 
-  <!--  <div id="section3" class="post container">
-        <div class="textBox">
-            <h2>Post Title Example Three</h2>
-            <p>By <a href="http://css-tricks.com"><strong>CSS</strong>-Tricks</a></p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse aliquet arcu a ipsum. Nunc arcu
-                est,
-                pulvinar vitae, consectetuer ac, pellentesque interdum, augue. Fusce iaculis nulla et sapien.
-                Aliquam
-                erat
-                volutpat. Etiam iaculis turpis nec libero. Nam adipiscing ullamcorper quam. Pellentesque erat. Sed
-                hendrerit. Duis id nisl. Cras arcu mauris, mollis vel, convallis non, elementum a, tortor. Donec ac
-                est
-                eget
-                elit consequat sollicitudin. In id odio quis tortor volutpat mollis. Nulla iaculis lobortis est.
-                Pellentesque in elit vitae nulla tempus euismod. Nam non erat in lacus rutrum malesuada. Donec
-                commodo
-                purus
-                sed quam posuere eleifend. Nam accumsan.Cras arcu mauris, mollis vel, convallis non, elementum a,
-                tortor.
-                Donec ac est eget elit consequat sollicitudin. In id odio quis tortor volutpat mollis. Nulla iaculis
-                lobortis est. Pellentesque in elit vitae nulla tempus euismod. Nam non erat in lacus rutrum
-                malesuada.
-                Donec
-                commodo purus sed quam posuere eleifend. Nam accumsan.Cras arcu mauris, mollis vel, convallis non,
-                elementum
-                a, tortor. Donec ac est eget elit consequat sollicitudin. In id odio quis tortor volutpat mollis.
-                Nulla
-                iaculis lobortis est. Pellentesque in elit vitae nulla tempus euismod. Nam non erat in lacus rutrum
-                malesuada. Donec commodo purus sed quam posuere eleifend. Nam accumsan.</p>
-        </div>
-
-    </div> -->
 
     <div id="webDev" class="post container">
         <div class="textBox">
@@ -147,12 +198,14 @@
             <div id="webPadding">
             </div>
             <div id="theTest" class="transition">
+                <h2> Web Development Experience</h2>
+                <div class="paddingCube1"></div>
                 <h2>HTML</h2>
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 100%">
-                        <span class="sr-only">100% Complete (success)</span>
+                        Advanced
                     </div>
                 </div>
                 <h2>CSS</h2>
@@ -160,7 +213,7 @@
                     <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 90%">
-                        <span class="sr-only">90% Complete</span>
+                        Advanced
                     </div>
                 </div>
                 <h2>Bootstrap</h2>
@@ -168,7 +221,7 @@
                     <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 70%">
-                        <span class="sr-only">70% Complete (danger)</span>
+                        Intermediate
                     </div>
                 </div>
                 <h2>Javascript</h2>
@@ -176,7 +229,7 @@
                     <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 60%">
-                        <span class="sr-only">60% Complete (warning)</span>
+                        Intermediate
                     </div>
                 </div>
                 <h2>JQuery</h2>
@@ -184,7 +237,7 @@
                     <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 20%">
-                        <span class="sr-only">20% Complete (info)</span>
+                        Beginner
                     </div>
                 </div>
                 <h2>Angular.JS</h2>
@@ -192,7 +245,7 @@
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 10%">
-                        <span class="sr-only">10% Complete (success)</span>
+                        Beginner
                     </div>
                 </div>
             </div>
@@ -207,12 +260,14 @@
             <div id="softPadding">
             </div>
             <div id="theTest2" class="transition">
+                <h2> Software Development Experience</h2>
+                <div class="paddingCube1"></div>
                 <h2>Git</h2>
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 70%">
-                        <span class="sr-only">70% Complete (success)</span>
+                        Intermediate
                     </div>
                 </div>
                 <h2>Command Line</h2>
@@ -220,7 +275,7 @@
                     <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 40%">
-                        <span class="sr-only">40% Complete</span>
+                        Intermediate
                     </div>
                 </div>
                 <h2>SQL</h2>
@@ -228,7 +283,7 @@
                     <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 30%">
-                        <span class="sr-only">30% Complete</span>
+                        Beginner
                     </div>
                 </div>
             </div>
@@ -243,12 +298,14 @@
             <div id="graphPadding">
             </div>
             <div id="theTest3" class="transition">
+                <h2> Graphic Experience</h2>
+                <div class="paddingCube1"></div>
                 <h2>GIMP</h2>
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 95%">
-                        <span class="sr-only">95% Complete (success)</span>
+                        Advanced
                     </div>
                 </div>
                 <h2>Adobe Photoshop</h2>
@@ -256,7 +313,7 @@
                     <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 70%">
-                        <span class="sr-only">70% Complete</span>
+                        Intermediate
                     </div>
                 </div>
                 <h2>Adobe Illustrator</h2>
@@ -264,7 +321,7 @@
                     <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
                          aria-valuemin="0"
                          aria-valuemax="100" style="width: 50%">
-                        <span class="sr-only">50% Complete (danger)</span>
+                        Intermediate
                     </div>
                 </div>
             </div>
@@ -293,6 +350,12 @@
                         <div class="row">
                             <div id="email"></div>
                         </div>
+                        <div class="row">
+                            <div id="website"></div>
+                        </div>
+                        <div class="row">
+                            <div id="linkedIn"></div>
+                        </div>
                     </div>
                 </div>
                 <div id="rightSide">
@@ -306,29 +369,10 @@
         </div>
     </div>
 </div>
-<!-- Modal Section -->
-<div class="modal fade" id="loganModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
 <script src="../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script src="../bootstrap-3.3.6-dist/js/bootstrap.js"></script>
 <script src="../bootstrap-3.3.6-dist/js/script.js"></script>
-</div>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </body>
 
 </html>
