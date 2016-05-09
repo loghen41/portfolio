@@ -77,6 +77,7 @@ tr {
 }
 .boring {
     text-decoration: none;
+    color: #999;
 }
 
 .boring:hover {
@@ -206,14 +207,6 @@ tr {
     width: 1300px;
 }
 
-.row1 {
-    display: inline;
-
-}
-
-.row2 {
-    display: inline;
-}
 
 #scrollAdvise {
     margin-top: 2%;
@@ -286,6 +279,7 @@ tr {
     text-align: left;
 }
 
+
 #webDev {
     height: 900px;
     width: 1300px;
@@ -310,13 +304,10 @@ tr {
 
 #workArea {
     position: absolute;
-    top: 24%;
+    top: 10%;
     left: 5%;
     opacity: 0;
     transition-delay: 2s;
-
-}
-#workButton {
 
 }
 
@@ -596,6 +587,7 @@ p {
     clear: both;
     margin-top: 5px;
     margin-left: 5px;
+    text-align: left;
 }
 
 #bcard span {
