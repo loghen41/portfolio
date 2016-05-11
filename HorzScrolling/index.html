@@ -24,19 +24,72 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            $("#homeButton2").click(function () {
+                $("body").animate({
+                    scrollLeft: 0
+                },2000);
+            });
+            $("#homeButton").click(function () {
+                $("body").animate({
+                    scrollLeft: 0
+                },2000);
+            });
+            $("#portfolioButton").click(function () {
+                $("body").animate({
+                    scrollLeft: 1483
+                },2000);
+            });
+            $("#workButton2").click(function () {
+                $("body").animate({
+                    scrollLeft: 3785
+                },2000);
+            });
+            $("#experienceButton").click(function () {
+                $("body").animate({
+                    scrollLeft: 7104
+                },2000);
+            });
+            $("#cardButton").click(function () {
+                $("body").animate({
+                    scrollLeft: 10793
+                },2000);
+            });
+        });
+    </script>
 </head>
 
 <body>
 
-<div class="btn-group-vertical" role="group" aria-label="...">
-    <button href="#home" type = "button" class="btn btn-default">Home</button>
-    <button href="#work" type = "button" class="btn btn-default">Work Experience</button>
-    <button data-target="#portfolio" type = "button" class="btn btn-default">Portfolio</button>
-    <button data-target="#webDev" type = "button" class="btn btn-default">Web Development</button>
-    <button data-target="#softDevelopment" type = "button" class="btn btn-default">Software Development</button>
-    <button data-target="#graphExperience" type = "button" class="btn btn-default">Graphic Experience</button>
-    <button data-target="#dbcard" type = "button" class="btn btn-default">Contact information</button>
-</div>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" id="homeButton2">Logan Hendricks</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a class = "navText" href="#" id="homeButton">Home</a></li>
+                <li><a class = "navText" href="#" id="portfolioButton">Portfolio</a></li>
+                <li><a class = "navText" href="#" id="workButton2">Work</a></li>
+                <li><a class = "navText" href="#" id="experienceButton">Experience</a></li>
+                <li><a class = "navText" href="#" id="cardButton">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class = "navText" href="about.html">About</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 
 <div id="page-wrap">
 
@@ -47,87 +100,26 @@
             <p class="flash">Scroll to learn more</p>
         </div>
     </div>
-    <div id="work" class="post container">
-            <div id="workButton" class="transition title link" onclick="textFade('workButton', 'workArea')">
-                <a class="boring" href="#workArea"><h2>My Previous Work Experience</h2><p class="boring"> Click to Learn More</p></a>
 
-            </div>
-
-        <div id="workArea" class="transition">
-            <h2> My Previous Work Experience</h2>
-            <div class="paddingCube3"></div>
-            <table id="workTable">
-                <thead>
-                </thead>
-                <tbody>
-                <tr>
-                    <td></td>
-                    <td><img id="zrii" onmouseover="imgtextAppear('zriiText')" onmouseout="imgtextFade('zriiText')"
-                             src="../images/work%20photo/dbb1f0_b574434855d446269e22c039c2729da0.png"/></td>
-                    <td id="zriiText" class="tableText transitionFast">
-                       <p>Zrii LLC</p>
-                            <p>Executive Support Representative</p>
-                            <p>Jun 2010 - Nov 2010</p>
-                    </td>
-                    <td><img id="afs" onmouseover="imgtextAppear('afsText')" onmouseout="imgtextFade('afsText')"
-                             src="../images/work%20photo/Associated-Food-Stores.png"/></td>
-                    <td id="afsText" class="tableText transitionFast">
-                        <p>Associated Food Stores</p>
-                        <p>Cashier</p>
-                        <p>Jul 2011 - Dec 2012</p>
-                    </td>
-                    <td><img id="holdman" onmouseover="imgtextAppear('holdmanText')"
-                             onmouseout="imgtextFade('holdmanText')" src="../images/work%20photo/blackback.jpg"/></td>
-                    <td id="holdmanText" class="tableText transitionFast">
-                        <p>Holdman Studios</p>
-                            <p>Gallery Director</p>
-                            <p>Apr 2013 - May 2015</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td><img id="securitas" onmouseover="imgtextAppear('securitasText')"
-                             onmouseout="imgtextFade('securitasText')" src="../images/work%20photo/securitas-logo.jpg"/>
-                    </td>
-                    <td id="securitasText" class="tableText transitionFast">
-                        <p>Securitas</p>
-                            <p>Security Guard</p>
-                            <p>Dec 2006 - Aug 2007</p>
-                    </td>
-                    <td><img id="woodbury" onmouseover="imgtextAppear('woodburyText')"
-                             onmouseout="imgtextFade('woodburyText')" src="../images/work%20photo/download.jpeg"/></td>
-                    <td id="woodburyText" class="tableText transitionFast">
-                        <p>Woodbury Art Museum</p>
-                            <p>Museum Docent</p>
-                            <p>Jul 2011 - Dec 2011</p>
-                    </td>
-                    <td><img id="byui" onmouseover="imgtextAppear('byuiText')" onmouseout="imgtextFade('byuiText')"
-                             src="../images/work%20photo/BYUI1.png"/></td>
-                    <td id="byuiText" class="tableText transitionFast">
-                        <p>BYU - Idaho</p>
-                        <p>Student Secretary</p>
-                        <p>Jan 2012 - Jul 2012</p>
-                    </td>
-                    <td><img id="zions" onmouseover="imgtextAppear('zionsText')" onmouseout="imgtextFade('zionsText')"
-                             src="../images/work%20photo/zbank.jpg"/></td>
-                    <td id="zionsText" class="tableText transitionFast">
-                        <p>Zion's Bank</p>
-                        <p>Teller III</p>
-                        <p>Sep 2015 - Current</p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+    <div class="textArea post">
+        <div class="Text">
+            <p>
+                Tired of boring, simple, and standard websites that look like they were designed by a monkey in Albania?
+            </p>
             <div class="paddingCube1"></div>
-            <p>Hover over the images to Learn More</p>
+            <p>Welcome to the <strong><em>future</em></strong> of websites. Scroll to see how Dynamic, Unique and
+                Responsive websites can change your online presence today.</p>
+            <div class="paddingCube1"></div>
         </div>
-
-
     </div>
+
     <div id="portfolio" class="post container">
+
         <div class="textBox">
             <div id="portfolioLink" class="transition title link" onclick="textFade('portfolioLink', 'cube')">
-                <a class="boring" href="#"><h2>My Portfolio</h2><p class="boring"> Click to Learn More</p></a>
+                <a class="boring" href="#"><h2>My Portfolio</h2>
+                    <p class="boring"> Click to Learn More</p></a>
+
             </div>
             <div class="paddingCube1"></div>
 
@@ -194,11 +186,110 @@
         </div>
     </div>
 
+    <div class="textArea post">
+        <div class="Text">
+            <p>
+                Hire an experienced professional who understands your business firsthand.
+            </p>
+            <div class="paddingCube1"></div>
+            <p>Review my background and range of previous work experience to see how my knowledge can solve your
+                organizaion's needs.</p>
+            <div class="paddingCube1"></div>
+        </div>
+    </div>
+
+    <div id="work" class="post container">
+        <div id="workButton" class="transition title link" onclick="textFade('workButton', 'workArea')">
+            <a class="boring" href="#workArea"><h2>My Previous Work Experience</h2>
+                <p class="boring"> Click to Learn More</p></a>
+
+        </div>
+
+
+        <div id="workArea" class="transition">
+            <h2> My Previous Work Experience</h2>
+
+            <div class="paddingCube3"></div>
+            <table id="workTable">
+                <thead>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td><img id="zrii" onmouseover="imgtextAppear('zriiText')" onmouseout="imgtextFade('zriiText')"
+                             src="../images/work%20photo/dbb1f0_b574434855d446269e22c039c2729da0.png"/></td>
+                    <td id="zriiText" class="tableText transitionFast">
+                        <p>Zrii LLC</p>
+                        <p>Executive Support Representative</p>
+                        <p>Jun 2010 - Nov 2010</p>
+                    </td>
+                    <td><img id="afs" onmouseover="imgtextAppear('afsText')" onmouseout="imgtextFade('afsText')"
+                             src="../images/work%20photo/Associated-Food-Stores.png"/></td>
+                    <td id="afsText" class="tableText transitionFast">
+                        <p>Associated Food Stores</p>
+                        <p>Cashier</p>
+                        <p>Jul 2011 - Dec 2012</p>
+                    </td>
+                    <td><img id="holdman" onmouseover="imgtextAppear('holdmanText')"
+                             onmouseout="imgtextFade('holdmanText')" src="../images/work%20photo/blackback.jpg"/></td>
+                    <td id="holdmanText" class="tableText transitionFast">
+                        <p>Holdman Studios</p>
+                        <p>Gallery Director</p>
+                        <p>Apr 2013 - May 2015</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><img id="securitas" onmouseover="imgtextAppear('securitasText')"
+                             onmouseout="imgtextFade('securitasText')" src="../images/work%20photo/securitas-logo.jpg"/>
+                    </td>
+                    <td id="securitasText" class="tableText transitionFast">
+                        <p>Securitas</p>
+                        <p>Security Guard</p>
+                        <p>Dec 2006 - Aug 2007</p>
+                    </td>
+                    <td><img id="woodbury" onmouseover="imgtextAppear('woodburyText')"
+                             onmouseout="imgtextFade('woodburyText')" src="../images/work%20photo/download.jpeg"/></td>
+                    <td id="woodburyText" class="tableText transitionFast">
+                        <p>Woodbury Art Museum</p>
+                        <p>Museum Docent</p>
+                        <p>Jul 2011 - Dec 2011</p>
+                    </td>
+                    <td><img id="byui" onmouseover="imgtextAppear('byuiText')" onmouseout="imgtextFade('byuiText')"
+                             src="../images/work%20photo/BYUI1.png"/></td>
+                    <td id="byuiText" class="tableText transitionFast">
+                        <p>BYU - Idaho</p>
+                        <p>Student Secretary</p>
+                        <p>Jan 2012 - Jul 2012</p>
+                    </td>
+                    <td><img id="zions" onmouseover="imgtextAppear('zionsText')" onmouseout="imgtextFade('zionsText')"
+                             src="../images/work%20photo/zbank.jpg"/></td>
+                    <td id="zionsText" class="tableText transitionFast">
+                        <p>Zion's Bank</p>
+                        <p>Teller III</p>
+                        <p>Sep 2015 - Current</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="paddingCube1"></div>
+            <p>Hover over the images to Learn More</p>
+        </div>
+    </div>
+
+    <div class="textArea post">
+        <div class="Text">
+            <p>With a wide variety of skills at your disposal, the sky is the limit on what we can accomplish.
+            </p>
+        </div>
+    </div>
 
     <div id="webDev" class="post container">
         <div class="textBox">
             <div id="webDevLink" class="transition title link" onclick="textFade('webDevLink', 'theTest')">
-                <a href="#theTest" class="boring"><h2>Web Development Experience</h2><p class="boring"> Click to Learn More</p></a>
+                <a href="#theTest" class="boring"><h2>Web Development Experience</h2>
+                    <p class="boring"> Click to Learn More</p></a>
+
             </div>
             <div id="webPadding">
             </div>
@@ -260,7 +351,9 @@
     <div id="softDevelopment" class="post container">
         <div class="textBox">
             <div id="SoftDevLink" class="transition title link" onclick="textFade('SoftDevLink', 'theTest2')">
-                <a href="#theTest2" class="boring"><h2>Software Development Experience</h2><p class="boring"> Click to Learn More</p></a>
+                <a href="#theTest2" class="boring"><h2>Software Development Experience</h2>
+                    <p class="boring"> Click to Learn More</p></a>
+
             </div>
             <div id="softPadding">
             </div>
@@ -298,7 +391,9 @@
     <div id="graphExperience" class="post container">
         <div class="textBox">
             <div id="graphExLink" class="transition title link" onclick="textFade('graphExLink', 'theTest3')">
-                <a href="#theTest3" class="boring"><h2>Graphic Experience</h2><p class="boring"> Click to Learn More</p></a>
+                <a href="#theTest3" class="boring"><h2>Graphic Experience</h2>
+                    <p class="boring"> Click to Learn More</p></a>
+
             </div>
             <div id="graphPadding">
             </div>
@@ -333,10 +428,18 @@
         </div>
     </div>
 
+    <div class="textArea post">
+        <div class="Text">
+            <p> Take a digital business card in your pocket, access it anywhere you go.
+            </p>
+        </div>
+    </div>
     <div id="dbcard" class="post container">
         <div class="textBox">
             <div id="cardBox" onclick="textFade('cardBox', 'bcard')" class="title transition link">
-                <a id="cardClicker" class="boring" href="#bcard"><h2> My Digital Business Card</h2><p class="boring"> Click to Learn More</p>
+                <a id="cardClicker" class="boring" href="#bcard"><h2> My Digital Business Card</h2>
+                    <p class="boring"> Click to Learn More</p>
+
                 </a>
             </div>
             <div id="bcard" class="transition">
