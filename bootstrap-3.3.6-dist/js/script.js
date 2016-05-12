@@ -27,13 +27,16 @@ function moveCard () {
 
 function textFade (idin, idout) {
     document.getElementById(idin).style.opacity = "0";
+    document.getElementById(idin).style.zIndex = 0  ;
     document.getElementById(idout).style.opacity = "1.0";
+    document.getElementById(idout).style.zIndex = 50;
 }
 
 function tableFade (idForFade) {
     for (var x in idForFade) {
       //  if (i = 0; i < idForFade.length; i++) {
             document.getElementById(idForFade).style.opacity = "1.0";
+
   //      }
     }
 }
