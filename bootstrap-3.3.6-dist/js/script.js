@@ -19,6 +19,7 @@ document.getElementById("phone").innerHTML = card.pnumber;
 document.getElementById("email").innerHTML = card.email;
 document.getElementById("website").innerHTML = card.website;
 document.getElementById("linkedIn").innerHTML = card.linkedIn;
+document.getElementById("facebook").innerHTML = card.facebook;
 
 function moveCard () {
     document.getElementById("dbcard").style.marginTop = "5%";
